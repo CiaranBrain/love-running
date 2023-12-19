@@ -20,7 +20,10 @@ body {
     font-family: 'Lato', sans-serif;
 
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -91,6 +94,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /* Hero section  */
 #hero {
     height: 600px;
@@ -104,25 +108,56 @@ main {
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
-    bottom: 30px; 
+    bottom: 30px;
     width: 80%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
+
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    text-align: center;
+    font-size: 280%;
+    margin-bottom: 20px;
+}
+
+
+/* Benefits section */
+#benefits-physical>div, #benefits-mental>div  {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding 0 20px; 
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0%;
+}
+
+#benefits-mental>hr
 
 /* Footer */
 #social-networks {
     text-align: center;
-    padding: 20px 0 ;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;

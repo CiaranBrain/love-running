@@ -21,11 +21,14 @@
       "**/CVS": true
    },
    "files.autoSave": "off",
-   "workbench.colorTheme": "Visual Studio Dark",
+   "workbench.colorTheme": "Visual Studio Dark - C++",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "liveServer.settings.multiRootWorkspaceName": "love-running",
    "[css]": {
       "editor.defaultFormatter": "vscode.css-language-features"
+   },
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
    }
 }
