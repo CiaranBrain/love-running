@@ -35,7 +35,7 @@ h3 {
 /* Header*/
 header {
     background-color: #ffffff;
-    padding-left: 0 1rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -145,7 +145,7 @@ main {
 }
 
 #benefits p {
-    padding 0 20px;
+    padding: 0 20px;
 }
 
 #benefits hr {
