@@ -206,7 +206,7 @@ line-height: 0px;
 
 /* Signup form   */
 #signup {
- background: url("/assets/images/signup-image.webp");
+ background: url("../images/signup-image.webp");
     background-size: cover; 
     background-position: 75%;
     padding: 20px 10% 0 10%;
