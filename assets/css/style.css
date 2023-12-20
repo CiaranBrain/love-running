@@ -32,6 +32,7 @@ h3 {
 .hidden-heading {
     display: none;
 }
+
 /* Header*/
 header {
     background-color: #ffffff;
@@ -187,6 +188,7 @@ main {
     /* Creates a grid of meetup times divs over the background */
     border: 2px solid white;
 }
+
 #times h3 {
     /* Overrites the heading color set in general styles */
     color: #fafafa;
@@ -199,9 +201,10 @@ main {
 }
 
 #photos {
-line-height: 0px;
+    line-height: 0px;
 
 }
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -218,7 +221,7 @@ line-height: 0px;
 }
 
 /* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
     #photos {
         column-count: 2;
         column-gap: 0px;
@@ -301,7 +304,7 @@ line-height: 0px;
 
     /* Gallery */
     #photos {
-        column-count: 4 ;
+        column-count: 4;
     }
 }
 
