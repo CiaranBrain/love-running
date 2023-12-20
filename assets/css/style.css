@@ -32,7 +32,6 @@ h3 {
 .hidden-heading {
     display: none;
 }
-
 /* Header*/
 header {
     background-color: #ffffff;
@@ -96,6 +95,8 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section  */
@@ -188,7 +189,6 @@ main {
     /* Creates a grid of meetup times divs over the background */
     border: 2px solid white;
 }
-
 #times h3 {
     /* Overrites the heading color set in general styles */
     color: #fafafa;
@@ -201,9 +201,55 @@ main {
 }
 
 #photos {
-    line-height: 0px;
+line-height: 0px;
+}
+
+/* Signup form   */
+#signup {
+ background: url("/assets/images/signup-image.webp");
+    background-size: cover; 
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;  
+} 
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+#signup-form>h2 {
+color: #fafafa;
+margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    padding: 0 5px;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border-radius: 2px;
+}
+
+.radio-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    padding: 15px 32px;
+    margin-top: 20px;
 
 }
+
 
 /* Footer */
 #social-networks {
@@ -221,7 +267,7 @@ main {
 }
 
 /* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px){
     #photos {
         column-count: 2;
         column-gap: 0px;
@@ -230,6 +276,29 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+    /* Form */
+
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+    
+    #signupform {
+        position: absolute;
+        top: 160px;
+        left: 10%;
+        width: 400px;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    #text-input:hover {
+        border-color: #f16c6b
+    }
 
     /* Header*/
     nav {
@@ -304,7 +373,7 @@ main {
 
     /* Gallery */
     #photos {
-        column-count: 4;
+        column-count: 4 ;
     }
 }
 
